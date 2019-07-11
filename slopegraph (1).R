@@ -67,13 +67,15 @@ ggplot(slope, aes(x = mes, y = inten_voto, group = nome)) +
 
 # Também pode fazer usando a função newggslopegraph do CGP
 
-newggslopegraph(slope, mes, inten_voto, nome, 
-                Title = "Intenções de voto de janeiro a fevereiro de 2018.", 
-                SubTitle = "", 
-                Caption = "fonte: Dados simulados para estudo do slopegraph.",
-                XTextSize = 14, #os meses
-                YTextSize = 8, #os candidatos
-                TitleTextSize = 25, SubTitleTextSize = 10, CaptionTextSize = 10,
-                LineThickness = 6, LineColor = "ByGroup", DataTextSize = 6,
-                WiderLabels = FALSE, RemoveMissing = TRUE) +
-  theme(plot.background = element_rect(fill = "#BFD5E3"))
+# Para funcionar tem que instalar o pacote  Rtools.
+
+# newggslopegraph(slope, mes, inten_voto, nome, 
+#                 Title = "Intenções de voto de janeiro a fevereiro de 2018.", 
+#                 SubTitle = "", 
+#                 Caption = "fonte: Dados simulados para estudo do slopegraph.",
+#                 XTextSize = 14, #os meses
+#                 YTextSize = 8, #os candidatos
+#                 TitleTextSize = 25, SubTitleTextSize = 10, CaptionTextSize = 10,
+#                 LineThickness = 6, LineColor = "ByGroup", DataTextSize = 6,
+#                 WiderLabels = FALSE, RemoveMissing = TRUE) +
+#   theme(plot.background = element_rect(fill = "#BFD5E3"))
